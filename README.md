@@ -1,6 +1,12 @@
-# vuephab
+# Vuephab
+![WIP](https://img.shields.io/badge/WIP-lightgrey)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/vuephab/vuephab)
+![Discord](https://img.shields.io/discord/708810519292805124?logo=Discord)
 
-> Intuitive Vue frontend to Phabricator utilizing Conduit API
+> ⸺ *Perspective Vue on Collaboration*
+![](./assets/logo.svg)
+
+Intuitive Vue frontend to Phabricator utilizing Conduit API
 
 ## Build Setup
 
