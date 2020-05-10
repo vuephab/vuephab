@@ -1,6 +1,6 @@
 {
   "name": "vuephab",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Intuitive Vue frontend to Phabricator utilizing Conduit API",
   "author": "Rodion Borisov",
   "private": true,
