@@ -1,15 +1,16 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
-  </v-app>
+  <v-layout fill-height>
+    <v-card class="ma-auto text-center" max-width="300">
+      <v-icon class="mt-2" size="72" v-text="icon" />
+      <v-card-title class="justify-center" v-text="summary" />
+      <v-card-actions class="justify-center">
+        <v-btn nuxt text to="/">
+          <v-icon left>mdi-home</v-icon>
+          Open home page
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-layout>
 </template>
 
 <script>
@@ -21,24 +22,22 @@ export default {
       default: null
     }
   },
-  data() {
-    return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
-    }
-  },
+  data: () => ({
+    icon: '',
+    summary: ''
+  }),
   head() {
-    const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+    let title = 'Error'
+    switch (this.error.statusCode) {
+      case 404:
+        title = 'Not Found'
+        this.icon = 'mdi-file-question'
+        this.summary = 'Inquired page does not exist'
+        break
+    }
     return {
       title
     }
   }
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>

@@ -9,7 +9,8 @@
 [![Vuetify](https://img.shields.io/badge/Vuetify-05c?style=for-the-badge&logo=vuetify)](https://vuetifyjs.com/)
 
 > ⸺ *Perspective Vue on Collaboration*
-> ![](./assets/logo.svg)
+>
+> ![](./assets/vuephab.svg)
 
 Intuitive Vue frontend to Phabricator utilizing Conduit API
 
