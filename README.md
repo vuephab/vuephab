@@ -17,18 +17,29 @@ Intuitive Vue frontend to Phabricator utilizing Conduit API
 ## How is it expected to work?
 
 1. Suppose you have installed Phabricator and it is accessible through base URL <https://phabricator.app>.
-2. Vuephab guides user to <https://phabricator.app/conduit/login/>.
-3. Vuephab expects from user to provide it a **Conduit API token** fetched on that page (after successful authentication).
-   > ⚠ User should treat token as extra user/password pair, because it basically opens a window to the actions on their behalf.
+2. Vuephab guides user to <https://phabricator.app/conduit/login/> or *Conduit API Tokens* section.
+3. Vuephab expects from user to provide it a **Conduit API token** fetched on that page (of course, after successful authentication).
 4. User receives cozy gateway in a form of Vuephab interface, so they can enjoy working with Phabricator even more.
 
-## Development
+## Environment Setup
+
+1. You'll need a stable version of Node.js.
+
+2. Install other dependencies:
+   ```bash
+   $ npm install
+   ```
+
+3. Feed following variables to Nuxt with use of `.env` file in project's root directory:
+   ```properties
+   BASE_URL=http://localhost:3000
+   PHABRICATOR_BASE_URL=https://phabricator.app
+   ```
+
+## Running Vuephab
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
+# serve with hot reload at BASE_URL
 $ npm run dev
 
 # build for production and launch server
@@ -39,4 +50,12 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Contibuting
+
+I believe you are familiar that project is still work in progress, so anything concerning the development can be raised and viewed at [GitHub issues](https://github.com/vuephab/vuephab/issues).
+
+Also, thanks for giving star and watching repository! It's some ambitious movement here to engage better project management at no cost.
+
+Basically, if you promote Phabricator in your circles, it's already a good gesture to Vuephab. Important point is that Vuephab is a supplement to Phabricator install and all data is stored in your Phabricator databases as usual.
+
+Vuephab is drastically rewritten stack to meet several user experience considerations that can make project management a joy.
