@@ -33,13 +33,14 @@
     >
       <template #prepend-inner>
         <v-menu offset-y>
-          <template #activator="{ on }">
+          <template #activator="{ on, value: open }">
             <v-btn
               class="ml-n5 mt-n1"
               color="accent"
+              height="32"
               min-width="50"
-              height="31"
               rounded
+              text
               x-small
               v-on="on"
             >
@@ -48,14 +49,15 @@
                 class="hidden-sm-and-down"
                 v-text="searchQueries[searchQuerySelected].title"
               />
-              <v-icon small>mdi-chevron-down</v-icon>
+              <v-icon v-if="open" small>mdi-chevron-down</v-icon>
+              <v-icon v-else small>mdi-chevron-right</v-icon>
             </v-btn>
           </template>
-          <v-list dark>
+          <v-list>
             <v-list-item class="mr-n2" dense>
               <v-chip-group
                 v-model="searchQuerySelected"
-                active-class="accent--text"
+                active-class="primary--text"
                 column
                 mandatory
               >
@@ -71,7 +73,7 @@
               </v-chip-group>
             </v-list-item>
             <v-list-item dense>
-              <v-chip color="accent" small to="/search">
+              <v-chip color="primary" light small to="/search">
                 <v-icon left small>mdi-toy-brick-search</v-icon>
                 <span>Advanced Search</span>
               </v-chip>
@@ -86,7 +88,7 @@
       </template>
     </v-text-field>
     <v-spacer />
-    <v-btn class="px-5" height="48" rounded text>
+    <v-btn class="mr-n3 px-5" height="48" nuxt rounded text to="/login">
       Login
       <v-avatar class="ml-3 mr-n5" color="accent">
         <v-icon dark>mdi-incognito</v-icon>

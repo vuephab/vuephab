@@ -62,7 +62,7 @@ module.exports = {
         light: {
           primary: colors.blue.darken1,
           secondary: colors.indigo.lighten1,
-          accent: colors.deepPurple.accent1,
+          accent: colors.blue.accent1,
           info: colors.cyan.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
