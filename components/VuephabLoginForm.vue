@@ -83,14 +83,16 @@
 <script lang="ts">
 import Vue, { VueConstructor } from 'vue'
 
-export default (Vue as VueConstructor<
+type _Vue = VueConstructor<
   Vue & {
     $refs: {
       tokenField: HTMLElement
       usernameField: HTMLElement
     }
   }
->).extend({
+>
+
+export default (Vue as _Vue).extend({
   name: 'VuephabLoginForm',
   data: () => ({
     generateTokenUrl: `${process.env.PHABRICATOR_BASE_URL}/conduit/login`,
