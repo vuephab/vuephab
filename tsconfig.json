@@ -8,12 +8,6 @@
       "esnext.asynciterable",
       "dom"
     ],
-    "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noEmit": true,
-    "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "~/*": [
@@ -24,9 +18,17 @@
       ]
     },
     "types": [
+      "@nuxt/types",
+      "@nuxtjs/axios",
       "@types/node",
-      "@nuxt/types"
-    ]
+      "vuetify"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules",

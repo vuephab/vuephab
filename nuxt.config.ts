@@ -1,12 +1,12 @@
-const colors = require('vuetify/es5/util/colors').default
+import colors from 'vuetify/es5/util/colors'
 
-module.exports = {
+export default {
   mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
-    titleTemplate: (titleChunk) =>
+    titleTemplate: (titleChunk: string) =>
       (titleChunk ? titleChunk + ' :: ' : '') + 'Vuephab',
     meta: [
       { charset: 'utf-8' },
@@ -78,6 +78,6 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {} // eslint-disable-line @typescript-eslint/no-unused-vars
+    extend() {}
   }
 }
