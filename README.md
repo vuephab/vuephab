@@ -30,10 +30,9 @@ Intuitive Vue frontend to Phabricator utilizing Conduit API
    $ npm install
    ```
 
-3. Feed following variables to Nuxt with use of `.env` file in project's root directory:
-   ```properties
-   BASE_URL=http://localhost:3000
-   PHABRICATOR_BASE_URL=https://phabricator.app
+3. Copy `.env.example` file under name `.env`:
+   ```bash
+   $ cp .env.example .env
    ```
 
 ## Running Vuephab
@@ -45,9 +44,6 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
 ## Contibuting
