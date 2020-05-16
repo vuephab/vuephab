@@ -1,8 +1,12 @@
 <template>
   <v-layout fill-height>
     <v-card class="ma-auto text-center" max-width="300">
-      <v-icon class="mt-2" size="72" v-text="icon" />
-      <v-card-title class="justify-center" v-text="summary" />
+      <v-icon
+        class="mt-2"
+        size="72"
+        v-text="icon || 'mdi-alert-circle-outline'"
+      />
+      <v-card-title class="justify-center" v-text="message || error.message" />
       <v-card-actions class="justify-center">
         <v-btn nuxt text to="/">
           <v-icon left>mdi-home</v-icon>
@@ -24,7 +28,7 @@ export default {
   },
   data: () => ({
     icon: '',
-    summary: ''
+    message: ''
   }),
   head() {
     let title = 'Error'
@@ -32,7 +36,7 @@ export default {
       case 404:
         title = 'Not Found'
         this.icon = 'mdi-file-question'
-        this.summary = 'Inquired page does not exist'
+        this.message = 'Inquired page does not exist'
         break
     }
     return {
