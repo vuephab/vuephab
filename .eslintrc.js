@@ -6,10 +6,11 @@ module.exports = {
   },
   extends: [
     '@nuxtjs/eslint-config-typescript',
-    'prettier',
-    'prettier/vue',
+    'plugin:cypress/recommended',
+    'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'prettier',
+    'prettier/vue'
   ],
   plugins: [
     'prettier'

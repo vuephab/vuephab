@@ -21,6 +21,7 @@
       "@nuxt/types",
       "@nuxtjs/axios",
       "@types/node",
+      "cypress",
       "vuetify"
     ],
     "esModuleInterop": true,
@@ -31,8 +32,8 @@
     "experimentalDecorators": true
   },
   "exclude": [
-    "node_modules",
     ".nuxt",
-    "dist"
+    "dist",
+    "node_modules"
   ]
 }
