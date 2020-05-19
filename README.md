@@ -3,10 +3,9 @@
 [![Version](https://img.shields.io/github/package-json/v/vuephab/vuephab)](./package.json)
 [![Discord](https://img.shields.io/discord/708810519292805124?logo=Discord)](https://discord.gg/DKdS26g)
 
-[![Conduit](https://img.shields.io/badge/Conduit-569?style=for-the-badge&logo=phabricator)](https://secure.phabricator.com/conduit/)
-[![Express](https://img.shields.io/badge/Express-060?style=for-the-badge&logo=node.js)](https://expressjs.com/)
-[![Nuxt](https://img.shields.io/badge/Nuxt-388?style=for-the-badge&logo=nuxt.js)](https://nuxtjs.org/)
-[![Vuetify](https://img.shields.io/badge/Vuetify-05c?style=for-the-badge&logo=vuetify)](https://vuetifyjs.com/)
+[![Conduit](https://img.shields.io/badge/Conduit-4a5f88?style=for-the-badge&logo=phabricator)](https://secure.phabricator.com/conduit/)
+[![Vuetify](https://img.shields.io/badge/Vuetify-1867c0?style=for-the-badge&logo=vuetify)](https://vuetifyjs.com/)
+[![Nuxt](https://img.shields.io/badge/Nuxt-36495d?style=for-the-badge&logo=nuxt.js)](https://nuxtjs.org/)
 
 > ⸺ *Perspective Vue on Collaboration*
 >
